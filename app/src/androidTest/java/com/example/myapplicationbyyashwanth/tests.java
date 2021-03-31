@@ -33,10 +33,10 @@ public class tests {
         onView(withContentDescription("Navigate up")).perform(click());
         onView(withId(R.id.message)).check(matches(withText("Typing random text")));
 
-        String word = "hello Android how are you";
+        String words = "hello Android how are you";
         onView(withId(R.id.button2)).perform(click());
-        Thread.sleep(3000);
-        onView(withId(R.id.message)).check(matches(withText(word)));
+        Thread.sleep(5000);
+        onView(withId(R.id.message)).check(matches(withText(words)));
     }
 
     @Test
